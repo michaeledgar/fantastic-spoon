@@ -1,0 +1,15 @@
+# In this directory, run the following command to build this builder.
+#
+# git add -A
+# git commit -m "note to self"
+# git push https://github.com/michaeledgar/fantastic-spoon master
+
+logsBucket: upsalite-prober-test_cloudbuild
+
+steps:
+  - name: ubuntu
+    entrypoint: bash
+    args: ['step1.sh']
+  - name: ubuntu
+    entrypoint: bash
+    args: ['step2.sh']
